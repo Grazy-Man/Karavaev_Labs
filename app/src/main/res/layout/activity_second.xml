@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
+    <!-- Close Button -->
 
+    <!-- Progress Bar -->
     <ImageButton
         android:id="@+id/btnClose"
         android:layout_width="48dp"
@@ -22,12 +24,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Title -->
+
+    <!-- Percentage text, now properly aligned -->
+
+    <!-- Title below progress bar -->
+
+    <!-- Answer Options Container -->
+
+    <!-- Skip Button -->
+
     <ProgressBar
         android:id="@+id/progressBar"
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="200dp"
         android:layout_height="20dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:max="100"
         android:progress="46"
         android:progressDrawable="@drawable/progress_bar_custom"
@@ -77,23 +89,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitle">
 
-
+        <!-- Answer 1 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:layout_marginBottom="12dp"
-            android:background="@drawable/rounded_border"
+            android:background="@drawable/rounded_border_green"
             android:orientation="horizontal"
             android:padding="12dp">
 
             <TextView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:background="@drawable/circle_background"
+                android:background="@drawable/circle_background_green"
                 android:gravity="center"
                 android:text="1"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="14sp" />
 
             <TextView
@@ -135,17 +147,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:background="@drawable/rounded_border"
+            android:background="@drawable/rounded_border_red"
             android:orientation="horizontal"
             android:padding="12dp">
 
             <TextView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:background="@drawable/circle_background"
+                android:background="@drawable/circle_background_red"
                 android:gravity="center"
                 android:text="3"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:textSize="14sp" />
 
             <TextView
@@ -187,10 +199,10 @@
         android:id="@+id/btnSkip"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:text="SKIP"
+        android:text="Continue"
         android:textSize="16sp"
         android:textColor="@android:color/white"
-        android:background="@drawable/rounded_button"
+        android:background="@drawable/rounded_button_re"
         android:layout_margin="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
