@@ -1,0 +1,7 @@
+<resources>
+<string name="app_name">TabModern</string>
+<string name="tab1_indicator">Students</string>
+<string name="tab2_indicator">Teachers</string>
+<string name="tab3_indicator">Classes</string>
+</resources>
+
