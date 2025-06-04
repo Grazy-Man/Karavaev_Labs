@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainConteiner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bExit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#673AB7"
+        android:onClick="onClickSignIn"
+        android:text="@string/sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bHide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSignUp"
+        android:text="@string/sign_up"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/bExit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bExit"
+        app:layout_constraintTop_toBottomOf="@+id/bExit" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/bExit"
+        app:layout_constraintEnd_toEndOf="@+id/bExit"
+        app:layout_constraintStart_toStartOf="@+id/bExit" />
+
+    <ImageView
+        android:id="@+id/imAvatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tvInfo"
+        app:layout_constraintEnd_toEndOf="@+id/bExit"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/bExit"
+        app:srcCompat="@drawable/dula"
+        tools:srcCompat="@drawable/dula" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="185dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="60dp"
+        android:background="#0C84E0"
+        android:text="@string/name4"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/imAvatar"
+        app:layout_constraintEnd_toEndOf="@+id/imAvatar"
+        app:layout_constraintStart_toStartOf="@+id/imAvatar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="ok" translatable="false">OK</string>
+
+    <string name="sign_in" translatable="false">SIGN IN</string>
+    <string name="sign_up" translatable="false">SIGN UP</string>
+    <string name="avatar" translatable="false">AVATAR</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="name" translatable="false">Ім\'я</string>
+    <string name="name2" translatable="false">Прізвище</string>
+    <string name="name3" translatable="false">По батькові</string>
+    <string name="done" translatable="false">ГОТОВО</string>
+    <string name="name4" translatable="false">MAIN ACTIVITY</string>
+    <string name="name5" translatable="false">ACTIVITY</string>
+    <string name="name6">ACTIVITY</string>
+</resources>
