@@ -13,7 +13,7 @@
         android:layout_height="24dp"
         app:tabIndicatorColor="@android:color/holo_blue_light" />
 
-    <!-- ViewPager2 з відступом зверху, щоб не перекривалося заголовком -->
+    <!-- ViewPager2 з відступом1 зверху, щоб не перекривалося заголовком -->
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
