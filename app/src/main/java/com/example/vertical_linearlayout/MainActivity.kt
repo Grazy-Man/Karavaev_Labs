@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
-        Toast.makeText(this, "OnStarts!", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "OnStarts1!", Toast.LENGTH_SHORT).show()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
