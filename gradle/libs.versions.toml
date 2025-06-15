@@ -1,0 +1,46 @@
+# gradle/libs.versions.toml
+
+[versions]
+androidGradlePlugin = "8.8.2" # або новіша, якщо є
+kotlin = "1.9.22" # Актуальна версія Kotlin
+
+# AndroidX Core, AppCompat, UI
+coreKtx = "1.13.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.0"
+constraintlayout = "2.1.4"
+
+# Testing
+junit = "4.13.2"
+androidxJunit = "1.2.0"
+espressoCore = "3.6.0"
+
+# Для Coroutines та Lifecycle
+lifecycleRuntimeKtx = "2.7.0"
+kotlinxCoroutinesAndroid = "1.8.0"
+
+[libraries]
+# --- Видалити або закоментувати цей рядок:
+# plugins-kotlin-android = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+
+# AndroidX Libraries
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+# Testing Libraries
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+# Для Coroutines та Lifecycle
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+
+[plugins]
+# ЦІ ВИЗНАЧЕННЯ ДЛЯ ПЛАГІНІВ ЧЕРЕЗ alias() Є КОРЕКТНИМИ І ПОВИННІ БУТИ
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
